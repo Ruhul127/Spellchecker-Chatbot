@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spelling Checker Chatbot</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <div class="main-container">
+        <div class="chat-container">
+            <div class="chat-header">Spelling Checker</div>
+            <div class="chat-body" id="chatBody"></div>
+            <div class="chat-footer">
+                <input type="text" id="userInput" placeholder="Type a message..." />
+                <button onclick="sendMessage()">Send</button>
+                <button onclick="clearChat()">Clear Chat</button>
+            </div>
+        </div>
+
+        <div class="info-container">
+            <div class="instructions-container">
+                <div class="instructions-header">Instructions</div>
+                <ul class="instructions-list">
+                    <li>Type a message to check for spelling errors.</li>
+                    <li>Receive corrections and feedback on typos.</li>
+                    <li>View suggested synonyms for the words in your input.</li>
+                </ul>
+            </div>
+            <div class="synonym-container">
+                <div class="synonym-header">Synonym Suggestions</div>
+                <div id="synonymData">No data yet.</div>
+            </div>
+        </div>
+    </div>
+    <script src="/static/scripts.js"></script>
+</body>
+</html>
